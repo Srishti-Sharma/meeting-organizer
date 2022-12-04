@@ -1,0 +1,35 @@
+.style-container {
+    background-color: rgb(34, 107, 192);
+}
+
+.custom-navbar {
+    border: 1px solid #EFEFEF
+}
+
+.welcome-container {
+    /* border-bottom: 1px solid #b6c0d1; */
+    /* border-radius: 10px; */
+    /* padding: 20px; */
+    margin: 40px 0px 80px 0px;
+}
+
+
+.card-buildings {
+    background-color: #16536e;
+    padding: 20px 0px
+}
+
+.card-meeting-rooms {
+    background-color: #b3c9d9;
+    padding: 20px 0px
+}
+
+.card-meetings {
+    background-color: #489eba;
+    padding: 20px 0px
+}
+
+.card-container {
+    /* background-color: aquamarine; */
+
+}
