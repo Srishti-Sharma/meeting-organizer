@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+
+import { Container } from 'react-bootstrap';
+import { AddMeeting, AddRoom, Home } from './pages';
+import { CustomNavbar } from './components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <CustomNavbar />
+      <Container className='root'>
+        <Routes>
+          <Route path='/' index element={<Home />} />
+          <Route path='/add-meeting' element={<AddMeeting />} />
+          <Route path='/add-room' element={<AddRoom />} />
+          <Route path='*' element={<div> No Matching route found! </div>} />
+        </Routes>
+      </Container>
     </div>
   );
 }

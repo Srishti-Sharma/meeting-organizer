@@ -1,0 +1,3 @@
+export const ADD_MEETING = 'ADD_MEETING';
+export const UPDATE_BUILDINGS = 'UPDATE_BUILDINGS';
+export const USER_INPUT = 'USER_INPUT';
